@@ -1,0 +1,11 @@
+<module rename-to='cardgame0'>
+  <inherits name='playn.PlayN'/>
+  <inherits name='CardGameAssets'/>
+
+  <source path='core'/>
+  <source path='html'/>
+
+  <public path="resources" />
+
+  <entry-point class='com.github.mrcsabatoth.html.CardGameHtml'/>
+</module>
