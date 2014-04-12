@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 import com.github.mrcsabatoth.core.about.AboutScene;
+import com.github.mrcsabatoth.core.board.BoardScene;
 
 import playn.core.Game;
 import playn.core.Key;
@@ -29,7 +30,7 @@ public class CardGame extends Game.Default {
 
   public final List<AppScene> scenes = new ArrayList<AppScene>(); {
     scenes.add(new AboutScene());
-    //scenes.add(new CardGameConcept());
+    scenes.add(new BoardScene());
   }
 
   public CardGame(DeviceService deviceService) {

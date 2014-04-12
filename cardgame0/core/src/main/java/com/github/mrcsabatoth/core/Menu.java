@@ -105,8 +105,11 @@ public class Menu extends AppScene
       pointer().setListener(null);
       iface = null;
     }
-    layer.destroy();
-    layer = null;
+    if (layer != null)
+    {
+      layer.destroy();
+      layer = null;    	
+    }
   }
 
   @Override
