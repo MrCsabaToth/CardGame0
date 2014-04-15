@@ -12,6 +12,36 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>CardGame Metaproject</name>
+  <description>Project for experimenting witg Google PlayN and TriplePlay<description>
+  <url>https://github.com/MrCsabaToth/CardGame0</url>
+
+  <issueManagement>
+    <url>https://github.com/MrCsabaToth/CardGame0/issues</url>
+    <system>GitHub Issues</system>
+  </issueManagement>
+
+  <licenses>
+    <license>
+      <name>Apache License</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/MrCsabaToth/CardGame0</url>
+    <connection>scm:git:git://github.com/MrCsabaToth/CardGame0.git</connection>
+    <developerConnection>scm:git:git@github.com:MrCsabaToth/CardGame0.git</developerConnection>
+  </scm>
+
+  <developers>
+    <developer>
+      <email>csaba.toth.us@gmail.com@gmail.com</email>
+      <name>Csaba Toth</name>
+      <url>https://github.com/MrCsabaToth</url>
+      <id>MrCsabaToth</id>
+    </developer>
+  </developers>
 
   <properties>
     <playn.version>1.8</playn.version>
