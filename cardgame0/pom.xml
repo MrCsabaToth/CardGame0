@@ -41,6 +41,18 @@
       <url>https://github.com/MrCsabaToth</url>
       <id>MrCsabaToth</id>
     </developer>
+    <developer>
+      <email>mike@centralcaldotnet.com</email>
+      <name>Micheal Twohey</name>
+      <url>https://github.com/Twodawg</url>
+      <id>twodawg</id>
+    </developer>
+    <developer>
+      <email>ChargerIIC@Yahoo.com</email>
+      <name>Vernon Burt</name>
+      <url>https://github.com/ChargerIIC</url>
+      <id>ChargerIIC</id>
+    </developer>
   </developers>
 
   <properties>
