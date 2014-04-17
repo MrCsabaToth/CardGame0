@@ -19,7 +19,7 @@ public class AboutScene extends AppScene {
 
 	@Override
 	public String name() {
-	    return "About";
+	  return "About";
 	}
 
 	@Override
@@ -64,7 +64,6 @@ public class AboutScene extends AppScene {
       base.destroy();
       base = null;
 	}
-
 
 	protected Layer createTextLayer(TextLayout layout, int color) {
       CanvasImage image = graphics().createImage((int)Math.ceil(layout.width()),
