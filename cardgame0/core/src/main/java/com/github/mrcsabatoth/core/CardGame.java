@@ -63,7 +63,7 @@ public class CardGame extends Game.Default {
       @Override
       public void onKeyDown(Keyboard.Event event) {
         if (backKeys.contains(event.key())) {
-            activateScene(menuScene);
+          activateScene(menuScene);
         } else {
           Keyboard.Listener delegate = activeScene.keyboardListener();
           if (delegate != null) {
