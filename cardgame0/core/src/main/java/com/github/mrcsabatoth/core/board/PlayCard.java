@@ -38,7 +38,7 @@ public class PlayCard {
       @Override
       public void onSuccess(Sprite sprite) {
         sprite.setSprite(cardSuit, cardValue);
-        sprite.layer().setOrigin(sprite.width() / 2f, sprite.height() / 2f);
+        sprite.layer().setOrigin(0, 0);
         sprite.layer().setTranslation(x, y);
         boardLayer.add(sprite.layer());
         hasLoaded = true;
