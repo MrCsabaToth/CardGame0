@@ -20,7 +20,7 @@ public enum CardSuit {
 
   public static CardSuit getValueFromString(String str) {
     for(CardSuit suit : CardSuit.values()) {
-      if (str.startsWith(suit.toString()))
+      if (str.startsWith(suit.toString() + "_"))
         return suit;
     }
     return CardSuit.SUIT_INVALID;

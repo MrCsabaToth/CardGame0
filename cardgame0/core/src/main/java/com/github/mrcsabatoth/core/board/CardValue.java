@@ -29,7 +29,7 @@ public enum CardValue {
 
   public static CardValue getValueFromString(String str) {
     for(CardValue value : CardValue.values()) {
-      if (str.endsWith(value.toString()))
+      if (str.endsWith("_" + value.toString()))
         return value;
     }
     return CardValue.VALUE_INVALID;
