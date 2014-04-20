@@ -35,34 +35,11 @@ public enum CardValue {
     return CardValue.VALUE_INVALID;
   }
 
-  public static CardValue getValueFromDouble(double rnd) {
-    double delta = 1.0/13;
-    if (rnd < delta)
-      return CardValue.VALUE_2;
-    if (rnd < 2 * delta)
-      return CardValue.VALUE_3;
-    if (rnd < 3 * delta)
-      return CardValue.VALUE_4;
-    if (rnd < 4 * delta)
-      return CardValue.VALUE_5;
-    if (rnd < 5 * delta)
-      return CardValue.VALUE_6;
-    if (rnd < 6 * delta)
-      return CardValue.VALUE_7;
-    if (rnd < 7 * delta)
-      return CardValue.VALUE_8;
-    if (rnd < 8 * delta)
-      return CardValue.VALUE_9;
-    if (rnd < 9 * delta)
-      return CardValue.VALUE_10;
-    if (rnd < 10 * delta)
-      return CardValue.VALUE_J;
-    if (rnd < 11 * delta)
-      return CardValue.VALUE_Q;
-    if (rnd < 12 * delta)
-      return CardValue.VALUE_K;
-    if (rnd <= 13 * delta)
-      return CardValue.VALUE_A;
+  public static CardValue getValueFromInt(int rnd) {
+    for(CardValue value : CardValue.values()) {
+      if (rnd == value.getValue())
+        return value;
+    }
     return CardValue.VALUE_INVALID;
   }
 }

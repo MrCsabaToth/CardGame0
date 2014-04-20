@@ -26,15 +26,11 @@ public enum CardSuit {
     return CardSuit.SUIT_INVALID;
   }
 
-  public static CardSuit getValueFromDouble(double rnd) {
-    if (rnd < 0.25)
-      return CardSuit.SUIT_SPADE;
-    if (rnd < 0.5)
-      return CardSuit.SUIT_CLUB;
-    if (rnd < 0.75)
-      return CardSuit.SUIT_DIAMOND;
-    if (rnd <= 1.0)
-      return CardSuit.SUIT_HEART;
+  public static CardSuit getValueFromInt(int rnd) {
+    for(CardSuit suit : CardSuit.values()) {
+      if (rnd == suit.getValue())
+        return suit;
+    }
     return CardSuit.SUIT_INVALID;
   }
 }
