@@ -2,6 +2,7 @@ package com.github.mrcsabatoth.core.board;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 import com.github.mrcsabatoth.core.AppScene;
 
@@ -54,10 +55,12 @@ public class BoardScene extends AppScene {
         }
       });
 
+      Random rnd = new Random();
+      rnd.setSeed(11223344L);
       for(int bx = 0; bx < 5; bx++) {
         for(int by = 0; by < 5; by++) {
-          CardSuit rndSuit = CardSuit.getValueFromDouble(Math.random());
-          CardValue rndValue = CardValue.getValueFromDouble(Math.random());
+          CardSuit rndSuit = CardSuit.getValueFromInt(rnd.nextInt(4));
+          CardValue rndValue = CardValue.getValueFromInt(rnd.nextInt(13));
           addCard(bx * 64, by * 64, rndSuit, rndValue);
         }
       }
