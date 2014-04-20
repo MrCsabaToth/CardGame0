@@ -98,9 +98,9 @@ public class Sprite {
   public void setSprite(CardSuit suit, CardValue value) {
     int suitInt = suit.getValue();
     int valueInt = value.getValue();
-    Asserts.checkElementIndex(suitInt * 4 + valueInt, spriteImages.size(), "Invalid card suit index");
+    Asserts.checkElementIndex(suitInt * 13 + valueInt, spriteImages.size(), "Invalid card suit index");
     if (suit != currentSuit && value != currentValue) {
-      current = spriteImages.get(suitInt * 4 + valueInt);
+      current = spriteImages.get(suitInt * 13 + valueInt);
       currentSuit = suit;
       currentValue = value;
       updateLayer();
