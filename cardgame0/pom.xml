@@ -12,7 +12,7 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>CardGame Metaproject</name>
-  <description>Project for experimenting witg Google PlayN and TriplePlay</description>
+  <description>Project for experimenting with Google PlayN and TriplePlay</description>
   <url>https://github.com/MrCsabaToth/CardGame0</url>
 
   <issueManagement>
