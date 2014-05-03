@@ -20,6 +20,8 @@ target/
 
 # Local configuration file (sdk path, etc)
 local.properties
+project.properties
+default.properties
 
 .project
 .classpath
